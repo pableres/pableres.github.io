@@ -3,43 +3,52 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Toydoms | Juega seguro, disfruta más</title>
+  <title>Toydoms | Much more than a condom</title>
   <style>
     body {
       margin: 0;
+      padding: 0;
+      background: white;
       font-family: 'Helvetica Neue', sans-serif;
-      background: linear-gradient(to bottom, #f8f9fa, #fff);
-      color: #333;
+      color: #1c1c1c;
+      text-align: center;
       display: flex;
       flex-direction: column;
-      align-items: center;
       justify-content: center;
+      align-items: center;
       height: 100vh;
-      text-align: center;
-      padding: 2rem;
     }
-    h1 {
-      font-size: 3rem;
-      margin-bottom: 0.5rem;
+
+    img.logo {
+      max-width: 80%;
+      width: 500px;
+      height: auto;
+      margin-bottom: 2rem;
     }
-    p {
+
+    p.slogan {
       font-size: 1.2rem;
-      max-width: 600px;
+      color: #c62828;
+      font-weight: bold;
+      letter-spacing: 1px;
     }
+
     a.button {
       margin-top: 2rem;
       display: inline-block;
       padding: 1rem 2rem;
-      background-color: #ff5a5f;
+      background-color: #c62828;
       color: white;
       text-decoration: none;
       font-weight: bold;
       border-radius: 30px;
       transition: background-color 0.3s ease;
     }
+
     a.button:hover {
-      background-color: #e6494e;
+      background-color: #a41414;
     }
+
     footer {
       position: absolute;
       bottom: 1rem;
@@ -49,9 +58,18 @@
   </style>
 </head>
 <body>
-  <h1>Toydoms</h1>
-  <p>Condones que son algo más que protección: placer, diseño y juego unidos en una experiencia única.</p>
-  <a class="button" href="mailto:hola@toydoms.co">Contáctanos</a>
+
+  <!-- LOGO PRINCIPAL -->
+  <img src="LogoToyDoms.jpg" alt="Toydoms Logo" class="logo" />
+
+  <!-- SLOGAN -->
+  <p class="slogan">Much more than a condom</p>
+
+  <!-- BOTÓN DE CONTACTO -->
+  <a href="mailto:hola@toydoms.co" class="button">Contáctanos</a>
+
+  <!-- FOOTER -->
   <footer>&copy; 2025 Toydoms</footer>
+
 </body>
 </html>
