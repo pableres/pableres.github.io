@@ -25,7 +25,6 @@
   <link rel="icon" href="favicon.ico" type="image/x-icon" />
   <link rel="apple-touch-icon" href="favicon.ico" />
 
-  <!-- ✅ Estilos -->
   <style>
     * {
       box-sizing: border-box;
@@ -57,9 +56,9 @@
 
     img.logo {
       max-width: 100%;
-      width: 500px;
+      width: 600px;
       height: auto;
-      margin-bottom: 2rem;
+      margin-bottom: 2.5rem;
     }
 
     p.slogan {
@@ -74,7 +73,7 @@
       margin-top: 2rem;
       display: inline-block;
       padding: 1rem 2rem;
-      background-color: #e91e63;
+      background-color: #c62828;
       color: white;
       text-decoration: none;
       font-weight: bold;
@@ -83,7 +82,7 @@
     }
 
     a.button:hover {
-      background-color: #c2185b;
+      background-color: #a41414;
     }
 
     .seo-text {
@@ -131,24 +130,31 @@
 </head>
 <body>
 
+  <!-- LOGO -->
   <img src="LogoToyDoms.jpg" alt="Toydoms Logo" class="logo fade-in" />
+
+  <!-- SLOGAN -->
   <p class="slogan fade-in">New silicon based condoms</p>
+
+  <!-- BOTÓN DE CONTACTO -->
   <a href="mailto:pableres@gmail.com" class="button fade-in">Contáctanos</a>
 
+  <!-- TEXTO PARA SEO -->
   <section class="seo-text fade-in">
     <p>
       Toydoms es una marca de preservativos basados en silicona con un enfoque moderno: combinamos seguridad, diseño, erotismo y placer para ofrecerte una experiencia única en cada encuentro. Fabricados con materiales de alta calidad y pensados para adaptarse a tu estilo de vida, nuestros productos están hechos para quienes buscan jugar seguro y disfrutar más.
     </p>
   </section>
 
+  <!-- FOOTER -->
   <footer class="fade-in">&copy; 2025 Toydoms</footer>
 
-  <!-- AVISO DE CONSTRUCCIÓN -->
+  <!-- AVISO EN CONSTRUCCIÓN -->
   <div class="construction-notice fade-in">
     <img src="under-construction.png" alt="Sitio en construcción" />
   </div>
 
-  <!-- ✅ JS para animaciones -->
+  <!-- ANIMACIONES CON JS -->
   <script>
     const observer = new IntersectionObserver(entries => {
       entries.forEach(entry => {
