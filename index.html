@@ -8,7 +8,7 @@
   <!-- 🧠 SEO Básico -->
   <meta name="description" content="Toydoms: condones que van más allá del sexo seguro. Diseño, placer y juego en una sola experiencia.">
 
-  <!-- 🌐 Open Graph (para compartir en redes) -->
+  <!-- 🌐 Open Graph -->
   <meta property="og:title" content="Toydoms | Much more than a condom" />
   <meta property="og:description" content="Condones que unen diseño, placer y juego. Descubre Toydoms." />
   <meta property="og:image" content="https://toydoms.com/LogoToyDoms.jpg" />
@@ -25,24 +25,24 @@
   <link rel="icon" href="favicon.ico" type="image/x-icon" />
   <link rel="apple-touch-icon" href="favicon.ico" />
 
-  <!-- ✅ Tus estilos -->
+  <!-- ✅ Estilos -->
   <style>
     * {
       box-sizing: border-box;
     }
 
-body {
-  margin: 0;
-  padding: 2rem;
-  background: linear-gradient(to bottom right, #fff9f0, #ffeede);
-  font-family: 'Helvetica Neue', sans-serif;
-  color: #1c1c1c;
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  min-height: 100vh;
-}
+    body {
+      margin: 0;
+      padding: 2rem;
+      background: linear-gradient(to bottom right, #fff9f0, #ffeede);
+      font-family: 'Helvetica Neue', sans-serif;
+      color: #1c1c1c;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      min-height: 100vh;
+    }
 
     .fade-in {
       opacity: 0;
@@ -74,7 +74,7 @@ body {
       margin-top: 2rem;
       display: inline-block;
       padding: 1rem 2rem;
-      background-color: #c62828;
+      background-color: #e91e63;
       color: white;
       text-decoration: none;
       font-weight: bold;
@@ -83,7 +83,15 @@ body {
     }
 
     a.button:hover {
-      background-color: #a41414;
+      background-color: #c2185b;
+    }
+
+    .seo-text {
+      max-width: 600px;
+      margin-top: 3rem;
+      font-size: 0.95rem;
+      color: #555;
+      line-height: 1.5;
     }
 
     footer {
@@ -93,15 +101,27 @@ body {
       padding: 1rem 0;
     }
 
+    .construction-notice {
+      margin-top: 4rem;
+      margin-bottom: 2rem;
+      opacity: 0.7;
+    }
+
+    .construction-notice img {
+      width: 120px;
+      height: auto;
+      max-width: 100%;
+    }
+
     @media (max-width: 600px) {
       p.slogan {
         font-size: 1.1rem;
       }
 
-    a.button {
-  background-color: #e91e63;
-  color: white;
-}
+      a.button {
+        padding: 0.8rem 1.5rem;
+        font-size: 1rem;
+      }
 
       img.logo {
         width: 80%;
@@ -114,12 +134,19 @@ body {
   <img src="LogoToyDoms.jpg" alt="Toydoms Logo" class="logo fade-in" />
   <p class="slogan fade-in">New silicon based condoms</p>
   <a href="mailto:pableres@gmail.com" class="button fade-in">Contáctanos</a>
+
   <section class="seo-text fade-in">
     <p>
       Toydoms es una marca de preservativos basados en silicona con un enfoque moderno: combinamos seguridad, diseño, erotismo y placer para ofrecerte una experiencia única en cada encuentro. Fabricados con materiales de alta calidad y pensados para adaptarse a tu estilo de vida, nuestros productos están hechos para quienes buscan jugar seguro y disfrutar más.
     </p>
   </section>
+
   <footer class="fade-in">&copy; 2025 Toydoms</footer>
+
+  <!-- AVISO DE CONSTRUCCIÓN -->
+  <div class="construction-notice fade-in">
+    <img src="under-construction.png" alt="Sitio en construcción" />
+  </div>
 
   <!-- ✅ JS para animaciones -->
   <script>
@@ -138,3 +165,4 @@ body {
 
 </body>
 </html>
+
