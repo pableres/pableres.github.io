@@ -5,9 +5,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Toydoms | Much more than a condom</title>
   <style>
+    * {
+      box-sizing: border-box;
+    }
+
     body {
       margin: 0;
-      padding: 0;
+      padding: 2rem;
       background: white;
       font-family: 'Helvetica Neue', sans-serif;
       color: #1c1c1c;
@@ -16,21 +20,22 @@
       flex-direction: column;
       justify-content: center;
       align-items: center;
-      height: 100vh;
+      min-height: 100vh;
     }
 
     img.logo {
-      max-width: 80%;
+      max-width: 100%;
       width: 500px;
       height: auto;
       margin-bottom: 2rem;
     }
 
     p.slogan {
-      font-size: 1.2rem;
+      font-size: 1.5rem;
       color: #c62828;
       font-weight: bold;
       letter-spacing: 1px;
+      margin: 0 1rem;
     }
 
     a.button {
@@ -50,20 +55,36 @@
     }
 
     footer {
-      position: absolute;
-      bottom: 1rem;
+      margin-top: auto;
       font-size: 0.8rem;
       color: #888;
+      padding: 1rem 0;
+    }
+
+    /* 📱 Estilos para móviles */
+    @media (max-width: 600px) {
+      p.slogan {
+        font-size: 1.1rem;
+      }
+
+      a.button {
+        padding: 0.8rem 1.5rem;
+        font-size: 1rem;
+      }
+
+      img.logo {
+        width: 80%;
+      }
     }
   </style>
 </head>
 <body>
 
-  <!-- LOGO PRINCIPAL DESDE LA RAÍZ -->
+  <!-- LOGO PRINCIPAL -->
   <img src="LogoToyDoms.jpg" alt="Toydoms Logo" class="logo" />
 
   <!-- SLOGAN -->
-  <p class="slogan">próximamante</p>
+  <p class="slogan">Much more than a condom</p>
 
   <!-- BOTÓN DE CONTACTO -->
   <a href="mailto:hola@toydoms.co" class="button">Contáctanos</a>
@@ -71,9 +92,5 @@
   <!-- FOOTER -->
   <footer>&copy; 2025 Toydoms</footer>
 
-</body>
-</html>
-
-  <footer>&copy; 2025 Toydoms</footer>
 </body>
 </html>
