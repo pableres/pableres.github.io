@@ -18,9 +18,19 @@
       text-align: center;
       display: flex;
       flex-direction: column;
-      justify-content: center;
       align-items: center;
       min-height: 100vh;
+    }
+
+    .fade-in {
+      opacity: 0;
+      transform: translateY(20px);
+      transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+    }
+
+    .visible {
+      opacity: 1;
+      transform: translateY(0);
     }
 
     img.logo {
@@ -61,7 +71,6 @@
       padding: 1rem 0;
     }
 
-    /* 📱 Estilos para móviles */
     @media (max-width: 600px) {
       p.slogan {
         font-size: 1.1rem;
@@ -80,17 +89,25 @@
 </head>
 <body>
 
-  <!-- LOGO PRINCIPAL -->
-  <img src="LogoToyDoms.jpg" alt="Toydoms Logo" class="logo" />
+  <img src="LogoToyDoms.jpg" alt="Toydoms Logo" class="logo fade-in" />
+  <p class="slogan fade-in">Much more than a condom</p>
+  <a href="mailto:hola@toydoms.co" class="button fade-in">Contáctanos</a>
+  <footer class="fade-in">&copy; 2025 Toydoms</footer>
 
-  <!-- SLOGAN -->
-  <p class="slogan">Much more than a condom</p>
+  <!-- ✅ JS para animaciones -->
+  <script>
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+        }
+      });
+    }, { threshold: 0.1 });
 
-  <!-- BOTÓN DE CONTACTO -->
-  <a href="mailto:hola@toydoms.co" class="button">Contáctanos</a>
-
-  <!-- FOOTER -->
-  <footer>&copy; 2025 Toydoms</footer>
+    document.querySelectorAll('.fade-in').forEach(el => {
+      observer.observe(el);
+    });
+  </script>
 
 </body>
 </html>
